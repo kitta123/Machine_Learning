@@ -1,0 +1,107 @@
+What is Regression Analysis?
+---------------------------
+regression analysis is used to model the relationship between a dependent variable and one or more independent variables.
+
+Terminologies related to regression analysis :-
+============================================
+1. Outliers:-
+-----------
+Suppose there is an observation in the dataset which is having a very high or very low value as compared to the other observations in the data, i.e. it does not belong to the population, such an observation is called an outlier. In simple words, it is extreme value. An outlier is a problem because many times it hampers the results we get.
+
+2. Multicollinearity:-
+---------------------
+When the independent variables are highly correlated to each other then the variables are said to be multicollinear. Many types of regression techniques assumes multicollinearity should not be present in the dataset. It is because it causes problems in ranking variables based on its importance. Or it makes job difficult in selecting the most important independent variable (factor).
+
+3. Heteroscedasticity:-
+---------------------
+When dependent variable's variability is not equal across values of an independent variable, it is called heteroscedasticity. Example -As one's income increases, the variability of food consumption will increase. A poorer person will spend a rather constant amount by always eating inexpensive food; a wealthier person may occasionally buy inexpensive food and at other times eat expensive meals. Those with higher incomes display a greater variability of food consumption.
+
+4. Underfitting and Overfitting:-
+-------------------------------
+When we use unnecessary explanatory variables it might lead to overfitting. Overfitting means that our algorithm works well on the training set but is unable to perform better on the test sets. It is also known as problem of high variance.
+
+When our algorithm works so poorly that it is unable to fit even training set well then it is said to underfit the data.It is also known as problem of high bias.
+
+Types of Regression :-
+===================
+
+1.Linear Regression
+2.Polynomial Regression
+3.Logistic Regression
+4.Quantile Regression
+5.Ridge Regression
+6.Lasso Regression
+7.Elastic Net Regression
+8.Principal Components Regression (PCR)
+9.Partial Least Squares (PLS) Regression
+10.Support Vector Regression
+11.Ordinal Regression
+12.Poisson Regression
+13.Negative Binomial Regression
+14.Quasi Poisson Regression
+15.Cox Regression
+16.Tobit Regression
+
+1. Linear Regression :-
+====================
+It is the simplest form of regression. It is a technique in which the dependent variable is continuous in nature. The relationship between the dependent variable and independent variables is assumed to be linear in nature.
+
+1.When you have only 1 independent variable and 1 dependent variable, it is called simple linear regression.
+2.When you have more than 1 independent variable and 1 dependent variable, it is called Multiple linear regression.
+
+Assumptions of linear regression:-
+--------------------------------
+1.There must be a linear relation between independent and dependent variables.
+2.There should not be any outliers present.
+3.No heteroscedasticity
+4.Sample observations should be independent.
+5.Error terms should be normally distributed with mean 0 and constant variance.
+6.Absence of multicollinearity and auto-correlation.
+
+2.Polynomial Regression:-
+-----------------------
+It is a technique to fit a nonlinear equation by taking polynomial functions of independent variable.
+Hence in the situations where the relation between the dependent and independent variable seems to be non-linear we can deploy Polynomial Regression Models.
+
+5.Ridge Regression :-
+-------------------
+It's important to understand the concept of regularization before jumping to ridge regression.
+
+1. Regularization:-
+-----------------
+Regularization helps to solve over fitting problem which implies model performing well on training data but performing poorly on validation (test) data. Regularization solves this problem by adding a penalty term to the objective function and control the model complexity using that penalty term.
+
+Regularization is generally useful in the following situations:
+1.Large number of variables.
+2.Low ratio of number observations to number of variables.
+3.High Multi-Collinearity.
+
+2. L1 Loss function or L1 Regularization:-
+----------------------------------------
+In L1 regularization we try to minimize the objective function by adding a penalty term to the sum of the absolute values of coefficients. This is also known as least absolute deviations method. Lasso Regression makes use of L1 regularization.
+
+3. L2 Loss function or L2 Regularization:-
+----------------------------------------
+In L2 regularization we try to minimize the objective function by adding a penalty term to thesum of the squares of coefficients.RidgeRegression or shrinkage regression makes use of L2 regularization.
+
+In the linear regression objective function we try to minimize the sum of squares of errors. In ridge regression (also known as shrinkage regression) we add a constraint on the sum of squares of the regression coefficients.
+
+6.Lasso Regression:-
+------------------
+Lasso stands for Least Absolute Shrinkage and Selection Operator. It makes use of L1 regularization technique in the objective function. 
+
+Advantage of lasso over ridge regression :-
+----------------------------------------
+Lasso regression can perform in-built variable selection as well as parameter shrinkage. While using ridge regression one may end up getting all the variables but with Shrinked Paramaters.
+
+Which one is better - Ridge regression or Lasso regression?
+----------------------------------------------------------
+Both ridge regression and lasso regression are addressed to deal with multicollinearity. Ridge regression is computationally more efficient over lasso regression.Any of them can perform better. So the best approach is to select that regression model which fits the test set data well.
+
+7.Elastic Net Regression:-
+-------------------------
+Elastic Net regression is preferred over both ridge and lasso regression when one is dealing with highly correlated independent variables.
+It is a combination of both L1 and L2 regularization.
+
+8.Stepwise Regression:-
+----------------------

@@ -1,0 +1,37 @@
+-:HYPOTHESIS TESTING : INDEPENDENT T-TEST :-
+============================================
+Hypothesis Testing : Meaning :-
+----------------------------
+You have sample data and you are asked to assess the credibility of a statement about population using sample data.
+
+In other words, we use a random sample of data taken from a population to describe and make inferences about the population. For example, Indian Government wants to know about response of its citizens on a new policy. It is not possible to reach out each citizen to collect feedback as it's a very expensive and time-consuming process. Instead they reach out to a sample of it from each district or state and make judgement whether people are happy with the policy or not.
+
+Statistical significance evaluates the likelihood that an observed (actual) difference is due to chance.
+
+Independent T-Test :-
+==================
+The independent t-test evaluates whether the means for two independent groups are significantly different from each other. It is used for just 2 groups of samples. If you have more than 2 groups of samples, you should use ANOVA.
+
+Null Hypothesis:-
+===============
+It is a statement that you want to test. It usually states that there is no relationship between the two variables. In this case, the null hypothesis states that there is no difference between the mean ratings of the charismatic-teacher-reputation condition and the punitive-teacher-reputation condition.
+Alternate Hypothesis :-
+====================
+It is contrary to the null hypothesis. It usually states that there is a relationship between the two variables. In this case, the alternate hypothesis states that there is a difference between the mean ratings of the charismatic-teacher-reputation condition and the punitive-teacher-reputation condition.
+
+What is p-value in simple terms?
+-------------------------------
+P-value evaluate how well the sample data support that the null hypothesis is true. A low P value means that your sample provides enough evidence that you can reject the null hypothesis for the entire population. In technical language, it means lowest level of significance at which you can reject the null hypothesis.
+
+Type I and II Errors Examples :-
+-----------------------------
+1. Let's say you are testing a new drug for some disease.
+Null Hypothesis : New Drug has no effect on disease. In a test of its effectiveness, a type I error would be to say it has an effect when it does not (False Positive) ; a type II error would be to say it has no effect when it does (False Negative).
+
+2. Null Hypothesis : Person is innocent
+If an innocent person is convicted, it is a type I error (False Positive). If court lets guilty person go free, it is type II error (False Negative).
+
+Interpretation :-
+--------------
+An independent-samples t-test was used to test the difference between the mean ratings of the charismatic-teacher-reputation condition and the punitive-teacher-reputation condition.
+

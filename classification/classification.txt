@@ -1,0 +1,67 @@
+SUPPORT VECTOR MACHINE :-
+----------------------
+It's a popular supervised learning algorithm (i.e. classify or predict target variable). It works both for classification and regression problems. It's one of the sought-after machine learning algorithm that is widely used in data science competitions.
+
+What is Support Vector Machine?
+------------------------------
+The main idea of support vector machine is to find the optimal hyperplane (line in 2D, plane in 3D and hyperplane in more than 3 dimensions) which maximizes the margin between two classes. In this case, two classes are red and blue balls. In layman's term, it is finding the optimal separating boundary to separate two classes (events and non-events).
+
+Support Vectors are observations that supports hyperplane on either sides.
+
+Why Hyperplane?
+--------------
+Hyperplane is just a line in 2D and plane in 3D. In higher dimensions (more than 3D), it's called hyperplane. SVM help us to find a hyperplane (or separating boundary) that can separate two classes (red and blue dots).
+
+What is Margin?
+--------------
+It is the distance between the hyperplane and the closest data point. If we double it, it would be equal to the margin.
+Objective : Maximize the margin between two categories.
+
+How to find the optimal hyperplane?
+----------------------------------
+In your dataset, select two hyperplanes which separate the data with no points between them and maximize the distance between these two hyperplanes. The distance here is 'margin'.
+
+How to treat Non-linear Separable Data?
+--------------------------------------
+Imagine a case - if there is no straight line (or hyperplane) which can separate two classes? 
+
+What is Kernel?
+--------------
+In simple words, it is a method to make SVM run in case of non-linear separable data points. The kernel function transforms the data into a higher dimensional feature space to make it possible to perform the linear separation. 
+
+Different Kernels:-
+-----------------
+1. linear: u'*v
+2. polynomial: (gamma*u'*v + coef0)^degree
+3. radial basis (RBF) : exp(-gamma*|u-v|^2)
+4. sigmoid : tanh(gamma*u'*v + coef0)
+RBF is generally the most popular one.
+
+How SVM works?
+-------------
+1.Choose an optimal hyperplane which maximize margin.
+2.Applies penalty for misclassification (cost 'c' tuning parameter).
+3.If non-linearly separable data points, transform data to high dimensional space where it is easier to classify with linear decision surfaces (Kernel trick)
+
+Advantages of SVM :-
+-----------------
+1.SVM performs well in case of non-linear separable data using kernel trick.
+2.It works well in high dimensional space (i.e. large number of predictors) 
+3.It works well in case of text or image classification.
+4.It does not suffer multicollinearity problem
+
+Disadvantages of SVM :-
+--------------------
+1.It takes a lot of time on large sized data sets
+2.It does not directly return probability estimates.
+3.The linear kernel is almost similar to logistic regression in case of linear separable data.
+
+Multi-Category Classes and SVM :-
+------------------------------
+Multi-category classes can be split into multiple one-versus-one or one-versus-rest binary classes.
+
+Support Vector Machine - Regression:-
+-----------------------------------
+Yes, Support Vector Machine can also be used for regression problem wherein dependent or target variable is continuous.
+
+The goal of SVM regression is same as classification problem i.e. to find maximum margin. Here, it means minimize error. In the case of regression, a margin of tolerance (epsilon) is set in approximation to the SVM. The primary goal is to minimize error, individualizing the hyperplane which maximizes the margin, keeping in mind that part of the error is tolerated.

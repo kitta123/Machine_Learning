@@ -1,0 +1,315 @@
+Types of Variables in statistics :-
+--------------------------------
+1.categorical
+2.Numerical
+
+1.Categorical :-
+-------------
+Qualitative data are often termed categorical data. Data that can be added into categories according to their characteristics.
+
+1.Nominal Variable (Unordered list) :-
+-----------------------------------
+A variable that has two or more categories, without any implied ordering.
+
+Examples :- 
+Gender - Male, Female
+Marital Status - Unmarried, Married, Divorcee
+State - New Delhi, Haryana, Illinois, Michigan
+
+2.Ordinal Variable (Ordered list):-
+---------------------------------
+A variable that has two or more categories, with clear ordering.
+
+Examples :- 
+Scale - Strongly Disagree, Disagree, Neutral, Agree, Strongly Agree
+Rating - Very low, Low, Medium, Great, Very great
+
+2.Numerical :-
+-----------
+1.Interval :-
+----------
+An interval variable is similar to an ordinal variable, except that the intervals between the values of the interval variable are equally spaced. In other words, it has order and equal intervals.
+
+Examples :-
+Temperature in Celsius - Temperature of 30°C is higher than 20°C, and temperature of 20°C is higher than 10°C. The size of these intervals  is the same.
+Annual Income in Dollars - Three people who make $5,000, $10,000 and $15,000. The second person makes $5,000 more than the first person and $5,000 less than the third person, and the size of these intervals  is the same.
+
+2.Ratio :-
+-------
+It is interval data with a natural zero point. When the variable equals 0.0, there is none of that variable.
+
+Examples :-
+Height
+Weight
+Temperature in Kelvin - It is a ratio variable, as 0.0 Kelvin really does mean 'no temperature.
+
+DESCRIPTIVE STATISTICS :-
+======================
+It provides information on summary statistics that includes Mean, Standard Error, Median, Mode, Standard Deviation, Variance, Kurtosis, Skewness, Range, Minimum, Maximum, Sum, and Count.
+
+Measure of Central Tendency :-
+---------------------------
+It  describes a whole set of data with a single value that represents the centre of its distribution.
+There are three main measures of central tendency: 
+1.the mode.
+2.the median. 
+3.the mean.
+
+1.Mean :-
+------
+It is the sum of the observations divided by the sample size.
+
+Example :-
+The mean of the values 5,6,6,8,9,9,9,9,10,10 is (5+6+6+8+9+9+9+9+10+10)/10 = 8.1
+
+Limitation :- 
+It is affected by extreme values. Very large or very small numbers can distort the answer.
+
+2.Median :-
+--------
+It is the middle value. It splits the data in half. Half of the data are above the median; half of the data are below the median.
+
+Advantage :-
+---------  
+It is NOT affected by extreme values. Very large or very small numbers does not affect it.
+
+3.Mode :-
+------
+It is the value that occurs most frequently in a dataset.
+
+Advantage :-
+---------  
+It can be used when the data is not numerical.
+
+Disadvantage :-
+------------
+1. There may be no mode at all if none of the data is the same.
+2. There may be more than one mode.
+
+When to use mean, median and mode?
+---------------------------------
+1.Mean :– When your data is not skewed i.e normally distributed. In other words, there are no extreme values present in the data set (Outliers).
+------
+2.Median :– When your data is skewed or you are dealing with ordinal (ordered categories) data (e.g. likert scale 1. Strongly dislike 2. Dislike 3.Neutral   4. Like 5. Strongly like)
+
+3.Mode :- When dealing with nominal (unordered categories) data.
+------
+
+2.Measure of Dispersion:-
+=======================
+It refers to the spread or dispersion of scores. 
+There are four main measures of variability: 
+1.Range.
+2.Inter quartile range.
+3.Standard deviation.
+4.Variance.
+
+
+1.Range :-
+--------
+It is simply the largest observation minus the smallest observation.
+
+Advantage:-  
+It is easy to calculate.
+
+Disadvantage:-
+It is very sensitive to outliers and does not use all the observations in a data set.
+
+2.Standard Deviation :-
+---------------------
+ It is a measure of spread of data about the mean.
+
+Advantage :-  
+It gives a better picture of your data than just the mean alone.
+
+Disadvantage :-  
+1. It doesn't give a clear picture about the whole range of the data.
+2. It can give a skewed picture if data contain outliers.
+
+3.Skewness:-
+----------
+It is a measure of symmetry. A distribution is symmetric if it looks the same to the left and right of the center point.
+
+4.Kurtosis:-
+----------
+It is a measure of whether the data are peaked or flat relative to the rest of the data. Higher values indicate a higher, sharper peak; lower values indicate a lower, less distinct peak
+
+STANDARDIZE A VARIABLE:-
+======================
+Variable Standardization is one of the most important concept of predictive modeling. It is a preprocessing step in building a predictive model. Standardization is also called Normalization and Scaling.
+
+Standardization / Scaling :-
+-------------------------
+The concept of standardization comes into picture when continuous independent variables are measured at different scales. It means these variables do not give equal contribution to the analysis.
+
+Methods of Standardization / Normalization :-
+===========================================
+There are main four methods of standardization. They are as follows -
+
+1. Z score :-
+-----------
+Z score standardization is one of the most popular method to normalize data. In this case, we rescale an original variable to have a mean of zero and standard deviation of one.
+
+z = x-mean/std.dev
+
+Mathematically, scaled variable would be calculated by subtracting mean of the original variable from raw valeu and then divide it by standard deviation of the original variable.
+
+2. Min-Max Scaling :-
+-------------------
+It is also called 0-1 scaling because the standardized value using this method lies between 0 and 1.
+
+The formula is shown below :-
+--------------------------
+x-min(x)/(max(x)-min(x))
+
+This method is used to make equal ranges but different means and standard deviations.
+
+3. Standard Deviation Method :-
+-----------------------------
+In this method, we divide each value by the standard deviation. The idea is to have equal variance, but different means and ranges. 
+Formula : x/stdev(x)
+
+4. Range Method :-
+---------------
+In this method, we dividing each value by the range.
+Formula : x /(max(x) - min(x)). 
+In this case, the means, variances, and ranges of the variables are still different, but at least the ranges are likely to be more similar.
+
+What is Centering?
+-----------------
+Centering means subtracting a constant value from every value of a variable. The constant value can be average, min or max. Most of the times we use average value to subtract it from every value.
+
+
+PARTIAL AND SEMIPARTIAL CORRELATION :-
+===================================
+Partial correlation measures linear relationship between two variables, while controlling the effect of one or more variable.
+
+What is Partial Correlation?
+---------------------------
+Partial correlation explains the correlation between two continuous variables (let's say X1 and X2) holding X3 constant for both X1 and X2.
+
+What is Semipartial Correlation?
+-------------------------------
+Semipartial correlation measures the strength of linear relationship between variables X1 and X2 holding X3 constant for just X1 or just X2. It is also called part correlation.
+
+Difference between Partial and Semipartial Correlation :-
+------------------------------------------------------
+Partial correlation holds variable X3 constant for both the other two variables. Whereas, Semipartial correlation holds variable X3 for only one variable (either X1 or X2). Hence, it is called 'semi'partial.
+
+Squared Partial and Semipartial Correlation :-
+--------------------------------------------
+In regression, squared partial and squared semipartial correlation coefficients are used.
+
+Squared partial correlation tells us how much of the variance in dependent variable (Y) that is not explained by variable X2 but explained by X1. In other words, it is the proportion of the variation in dependent variable that was left unexplained by other predictors / independent variables but has been explained by independent variable X1.
+
+Squared Semi-partial correlation tells us how much of the unique contribution of an independent variable to the total variation in dependent variable. In other words, it explains increment in R-square when an independent variable is added.
+
+Squared Partial correlation will always be greater than or equal to squared semi-partial correlation.
+
+Squared Partial Correlation >= Squared Semi-partial Correlation
+---------------------------------------------------------------
+
+Which indicates variable importance?
+-----------------------------------
+Squared Semipartial correlation indicates variable importance because it measures incremental value in R-Square. We can rank variables based on high to low values of squared semipartial correlation score.
+
+Relationship between Squared Semipartial correlation and Standardized Estimate :-
+-------------------------------------------------------------------------------
+Squared Semipartial Correlation = (Standardized Estimate)² * Tolerance
+
+Can individual squared semi-partial correlation add to R-squared?
+----------------------------------------------------------------
+Answer is NO. It is because the total variation in dependent variable also constitutes a portion that is due to within correlation between two independent variables.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+VALIDATE CLUSTER ANALYSIS :-
+=========================
+Clustering validation process can be done with 4 methods (Theodoridis and Koutroubas, G. Brock, Charrad).
+
+I. Relative Clustering Validation :-
+---------------------------------
+Relative clustering validation, which evaluates the clustering structure by varying different parameter values for the same algorithm (e.g.,: varying the number of clusters k). It’s generally used for determining the optimal number of clusters.
+
+II. Internal Clustering Validation :-
+----------------------------------
+Internal clustering validation, which use the internal information of the clustering process to evaluate the goodness of a clustering structure. It can be also used for estimating the number of clusters and the appropriate clustering algorithm.
+
+The internal measures included in clValid package are:
+-----------------------------------------------------
+1.Connectivity - what extent items are placed in the same cluster as their nearest neighbors in the data space. It has a value between 0 and infinity and should be minimized.
+2.Average Silhouette width - It lies between -1 (poorly clustered observations) to 1 (well clustered observations). It should be maximized.
+3.Dunn index - It is the ratio between the smallest distance between observations not in the same cluster to the largest intra-cluster distance. It has a value between 0 and infinity and should be maximized.
+
+III. Clustering Stability Validation:-
+------------------------------------
+Clustering stability validation, which is a special version of internal validation. It evaluates the consistency of a clustering result by comparing it with the clusters obtained after each column is removed, one at a time.
+
+The cluster stability measures includes:
+1.The average proportion of non-overlap (APN)
+2.The average distance (AD)
+3.The average distance between means (ADM)
+4.The figure of merit (FOM)
+
+The APN measures the average proportion of observations not placed in the same cluster by clustering based on the full data and clustering based on the data with a single column removed.
+
+The AD measures the average distance between observations placed in the same cluster under both cases (full dataset and removal of one column).
+
+The ADM measures the average distance between cluster centers for observations placed in the same cluster under both cases.
+
+The FOM measures the average intra-cluster variance of the deleted column, where the clustering is based on the remaining (undeleted) columns. It also has a value between zero and 1, and again smaller values are preferred.
+
+IV. External Clustering Validation:-
+----------------------------------
+External cluster validation uses ground truth information. That is, the user has an idea how the data should be grouped. This could be a know class label not provided to the clustering algorithm. Since we know the “true” cluster number in advance, this approach is mainly used for selecting the right clustering algorithm for a specific dataset.
+
+The external cluster validation measures includes:
+1.Corrected Rand Index
+2.Variation of Information (VI)
+
+The Corrected Rand Index provides a measure for assessing the similarity between two partitions, adjusted for chance. Its range is -1 (no agreement) to 1 (perfect agreement). It should be maximized.
+
+The Variation of Information is a measure of the distance between two clusterings (partitions of elements). It is closely related to mutual information. It should be minimized.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+19.SELECTING THE BEST LINEAR REGRESSION MODEL :-
+=============================================
+When you have a good number of variables in your regression model, it is very important to select the important variables so that the model would not overfit or underfit.
+
+1.Univariate Analysis:-
+----------------------
+The initial step is to check each independent variable with dependent variable. It is to eliminate some independent variables which are not related to dependent variable at all. We can check their individual model R-square and p-value of their coefficient to test whether coefficient is significantly different from zero.
+
+2.Stepwise Selection Algorithm:-
+------------------------------
+The STEPWISE selection algorithm is a combination of backward and forward selection. 
+In a forward stepwise regression, the variable which would add the largest increment to R2 (i.e. the variable which would have the largest semipartial correlation) is added next (provided it is statistically significant). 
+In a backwards stepwise regression, the variable which would produce the smallest decrease in R2 (i.e. the variable with the smallest semipartial correlation) is dropped next (provided it is not statistically significant).
+
+3.Automated Model Selection :-
+---------------------------
+There are two important metrics that helps evaluate the model - Adjusted R-Square and Mallows' Cp Statistics.
+
+Let's start with Adjusted R- Square.
+
+Adjusted R-Square:-
+-----------------
+It penalizes the model for inclusion of each additional variable. Adjusted R-square would increase only if the variable included in the model is significant. The model with the larger adjusted R-square value is considered to be the better model.
+
+Mallows' Cp Statistic :-
+---------------------
+It helps detect model biasness, which refers to either underfitting the model or overfitting the model.
+Mallows Cp = (SSE/MSE) – (n – 2p) 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+21.MIXED REGRESSION MODELING SIMPLIFIED :-
+=======================================
+Mixed-Effects Regression Modeling:-
+---------------------------------
+Mixed effects models work for correlated data regression models, including repeated measures, longitudinal, time series, clustered, and other related methods.
+
+Definition of Mixed Regression Model :-
+------------------------------------
+It includes features of both fixed and random effects. Whereas, standard regression includes only fixed effects.
+
+
