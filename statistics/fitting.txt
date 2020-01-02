@@ -1,0 +1,32 @@
+Overfitting in Machine Learning :-
+-------------------------------
+Overfitting refers to a model that models the training data too well.
+Good performance on the training data, poor generliazation to other data.
+
+Overfitting happens when a model learns the detail and noise in the training data to the extent that it negatively impacts the performance of the model on new data. This means that the noise or random fluctuations in the training data is picked up and learned as concepts by the model. The problem is that these concepts do not apply to new data and negatively impact the models ability to generalize.
+
+Overfitting is more likely with nonparametric and nonlinear models that have more flexibility when learning a target function. As such, many nonparametric machine learning algorithms also include parameters or techniques to limit and constrain how much detail the model learns.
+
+
+Underfitting in Machine Learning :-
+---------------------------------
+Underfitting refers to a model that can neither model the training data nor generalize to new data.
+Poor performance on the training data and poor generalization to other data.
+
+An underfit machine learning model is not a suitable model and will be obvious as it will have poor performance on the training data.
+
+Underfitting is often not discussed as it is easy to detect given a good performance metric. The remedy is to move on and try alternate machine learning algorithms. Nevertheless, it does provide a good contrast to the problem of overfitting.
+
+A Good Fit in Machine Learning :-
+------------------------------
+
+
+How To Limit Overfitting :-
+------------------------
+Both overfitting and underfitting can lead to poor model performance. But by far the most common problem in applied machine learning is overfitting.
+
+Overfitting is such a problem because the evaluation of machine learning algorithms on training data is different from the evaluation we actually care the most about, namely how well the algorithm performs on unseen data.
+
+There are two important techniques that you can use when evaluating machine learning algorithms to limit overfitting:
+1.Use a resampling technique to estimate model accuracy.
+2.Hold back a validation dataset.
