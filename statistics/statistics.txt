@@ -90,7 +90,8 @@ When to use mean, median and mode?
 ---------------------------------
 1.Mean :– When your data is not skewed i.e normally distributed. In other words, there are no extreme values present in the data set (Outliers).
 ------
-2.Median :– When your data is skewed or you are dealing with ordinal (ordered categories) data (e.g. likert scale 1. Strongly dislike 2. Dislike 3.Neutral   4. Like 5. Strongly like)
+2.Median :– When your data is skewed or you are dealing with ordinal (ordered categories) data.
+(e.g. likert scale 1. Strongly dislike 2. Dislike 3.Neutral   4. Like 5. Strongly like)
 
 3.Mode :- When dealing with nominal (unordered categories) data.
 ------
@@ -180,7 +181,7 @@ What is Centering?
 Centering means subtracting a constant value from every value of a variable. The constant value can be average, min or max. Most of the times we use average value to subtract it from every value.
 
 
-PARTIAL AND SEMIPARTIAL CORRELATION :-
+PARTIAL AND SEMI-PARTIAL CORRELATION :-
 ===================================
 Partial correlation measures linear relationship between two variables, while controlling the effect of one or more variable.
 
@@ -188,15 +189,15 @@ What is Partial Correlation?
 ---------------------------
 Partial correlation explains the correlation between two continuous variables (let's say X1 and X2) holding X3 constant for both X1 and X2.
 
-What is Semipartial Correlation?
+What is Semi-partial Correlation?
 -------------------------------
 Semipartial correlation measures the strength of linear relationship between variables X1 and X2 holding X3 constant for just X1 or just X2. It is also called part correlation.
 
-Difference between Partial and Semipartial Correlation :-
+Difference between Partial and Semi-partial Correlation :-
 ------------------------------------------------------
 Partial correlation holds variable X3 constant for both the other two variables. Whereas, Semipartial correlation holds variable X3 for only one variable (either X1 or X2). Hence, it is called 'semi'partial.
 
-Squared Partial and Semipartial Correlation :-
+Squared Partial and Semi-partial Correlation :-
 --------------------------------------------
 In regression, squared partial and squared semipartial correlation coefficients are used.
 
@@ -213,7 +214,7 @@ Which indicates variable importance?
 -----------------------------------
 Squared Semipartial correlation indicates variable importance because it measures incremental value in R-Square. We can rank variables based on high to low values of squared semipartial correlation score.
 
-Relationship between Squared Semipartial correlation and Standardized Estimate :-
+Relationship between Squared Semi-partial correlation and Standardized Estimate :-
 -------------------------------------------------------------------------------
 Squared Semipartial Correlation = (Standardized Estimate)² * Tolerance
 

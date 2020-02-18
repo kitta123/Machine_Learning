@@ -15,6 +15,7 @@ The independent t-test evaluates whether the means for two independent groups ar
 Null Hypothesis:-
 ===============
 It is a statement that you want to test. It usually states that there is no relationship between the two variables. In this case, the null hypothesis states that there is no difference between the mean ratings of the charismatic-teacher-reputation condition and the punitive-teacher-reputation condition.
+
 Alternate Hypothesis :-
 ====================
 It is contrary to the null hypothesis. It usually states that there is a relationship between the two variables. In this case, the alternate hypothesis states that there is a difference between the mean ratings of the charismatic-teacher-reputation condition and the punitive-teacher-reputation condition.
